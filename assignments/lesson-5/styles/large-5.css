@@ -78,7 +78,13 @@ li:last-child a{
     border-right: none;
 }
 /*     End of Nav Menu     */
+h2{
+    text-align: center;
+    font-size: 2em;
+    margin: .5em 0em .3em 0em;
+    text-shadow: 2px 2px 1px rgb(34, 34, 34);
 
+}
 /*     Start of Today Div  */
 
 div.today{
