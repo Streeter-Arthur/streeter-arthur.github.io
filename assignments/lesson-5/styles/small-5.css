@@ -2,7 +2,7 @@
 
 @media only screen and (max-width: 779px) {
     body{min-width: 432px;}
-    header img {display: block; clear: both; float: center; margin: auto;}
+    header img {display: block; clear: both; margin: auto;}
     nav li {display: block; float: none; height: 0em;}
     nav li:first-child{ display: block; height: 3em;}
     section.forecast {display: none;}

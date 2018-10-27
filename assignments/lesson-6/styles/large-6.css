@@ -1,0 +1,228 @@
+body {
+    font-size: 15px; 
+    font-family: 'Josefin Sans', sans-serif;
+    color: #F4976C;
+    background-color: #D2FDFF;
+    max-width: 800px;
+    margin: auto;
+}
+
+/*     Start of Header     */
+
+header {
+    background-color: #B4DFE5;
+    text-align: center;
+    margin: auto;
+}
+
+header img {
+
+    display: inline-block;
+    padding-top: 15px;
+
+}
+
+header section{
+
+    display: inline-block;
+    padding: 20px 40px ;
+
+}
+
+header section p {
+
+    font-style: italic;
+}
+
+h1{
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 2px 2px 1px white;
+}
+/*     End of Header     */
+
+/*     Start of Nav Menu     */
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3c74a6;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    border-right: 1px solid #bbb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #1c4f7c;
+    color: white;
+}
+li.menu {display:none;}
+
+.active {
+    background-color:rgb(235, 225, 163);
+    color: #3c74a6;
+}
+
+li:last-child a{
+    border-right: none;
+}
+
+li button {display: none;}
+/*     End of Nav Menu     */
+h2{
+    text-align: center;
+    font-size: 2em;
+    margin: .5em 0em .3em 0em;
+    text-shadow: 2px 2px 1px rgb(34, 34, 34);
+
+}
+/*     Start of Today Div  */
+
+div.today{
+    height: 340px;
+    background-position: center; 
+    background-image: url("../images/daily-large.jpg");
+}
+section.weathersummary{
+    width: 12em;
+    margin: 1em 0em 0em 2em;
+    padding: 2px;
+    background: rgba(9, 179, 15, 0.274);
+    display: inline-block;
+    box-shadow: 0px 0px 42px -3px rgba(0,0,0,0.58);
+    border: 1px solid rgb(170, 248, 212);
+    text-shadow: 1px 1px 3px black;
+}
+section.weathersummary h3 {
+    margin: .3em 0em 1em .3em;
+    border-bottom: 1px solid #F4976C;
+}
+
+section.weathersummary p{
+    display: block;
+    margin: 0;
+}
+p.label{
+    float: left;
+    width: 6em;
+    padding-left: .5em;
+    text-align: right;
+}
+p.value{
+    float: right;
+    width: 5em;
+    color: rgb(185, 239, 241);
+}
+/*     End of Today Div  */
+
+/*     Start of 5-Day Forcast Div  */
+section.forecast{
+    display: block;
+    box-shadow: inset 0px 0px 42px -7px rgba(0,0,0,0.58);
+    padding: .1em 0em 1em 0em;
+    margin-top: 1.26em;
+    background-color: rgb(47, 72, 110);
+
+}
+section.forecast h3{
+    text-align: center;
+    margin-bottom: 0;
+
+}
+section.forecast table{
+    margin: auto;
+}
+section.forecast th{
+    background-color: white;
+}
+
+section.forecast tr *{
+    padding: .5em;
+    border-style: solid;
+    border-color: white;
+}
+/*     End of 5-Day Forcast Div  */
+/*     Start of Article Div  */
+article{
+    display: block;
+    margin-top: 1.26em;
+    padding: 1em 2em;
+    background-color:rgb(235, 225, 163);
+    box-shadow: inset 0px 0px 42px -7px rgba(0,0,0,0.58);
+
+}
+article h3{
+    margin-bottom: 0;
+}
+article span{
+    display: block;
+    clear: both;
+    font-size: .7em;
+    margin: 0;
+    color: rgb(170, 124, 103);
+}
+article p{
+    display: inline-block;
+    width: 400px;
+    margin-left: .5em;
+}
+article a{
+    font-size: .7em;
+}
+article img{
+    display: block;
+    width: 300px;
+    float: right;
+    box-shadow: 0px 0px 42px -3px rgba(0,0,0,0.58);
+
+}
+/*     End of Article Div  */
+/*     Start of Footer Div  */
+footer {
+    margin-top: 1.5em;
+
+}
+section.bottom{
+    padding: 1em 0em;
+    background-color: #B4DFE5;
+}
+.bottom *{margin: 0em 1em 0em 1em; }
+
+img.contactImg{
+    width:200px;
+}
+.contact{
+    display: inline-block;
+    width: 200px;
+    color: rgb(0, 0, 0);
+}
+.contact span{
+    margin: 0;
+    font-weight: bold;
+}
+.map{
+    display: inline-block;
+}
+iframe {
+    border: 1px solid rgb(0, 0, 0);
+    width: 240px;
+    height: 100px;
+}
+section.footernav{
+    text-align: center;
+    background-color: rgb(47, 72, 110);
+    padding: .1em 0em;
+}
+/*     End of Footer Div  */
+

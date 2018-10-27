@@ -1,0 +1,48 @@
+
+
+@media only screen and (max-width: 779px) {
+    body{width: 432px;}
+    header img {display: inline-block; height: 80px;}
+    header h1 {font-size: 3em;}
+    header section{padding: 20px 20px 0px 30px;}
+    img.currentWeather {display: none;}
+    nav li {display: none; float: none; }
+    nav li:first-child{ display: block; height: 3em;}
+    nav li a{border-right: none;}
+    div.today {background-image: url("../images/daily-small.jpg"); height: 184px;}
+    section.forecast {display: none;}
+    article p {display: block; width: auto; }
+    article img{display: block; float: none; margin: auto;}
+    .contactImg {display:none;}
+    .contact {display: block; margin: auto;}
+    .map {display: block; text-align: center; margin: auto;}
+    li button {
+        display: inline-block;
+        position: absolute;
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 1.25em;
+        padding: 0.66em 12.78em 0.6em 9.4em;}
+    button:hover {
+        cursor: pointer;
+    }
+    li.menu {display: block;}
+    li h4{
+    font-size: 15px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px 13px 16px;
+    margin: 0;
+    font-weight: normal;
+    }
+    li.menu:hover{
+        background-color: #1c4f7c;
+    }
+
+}
+
+@media only screen and (min-width: 780px){
+    nav li {display: block;}
+}
