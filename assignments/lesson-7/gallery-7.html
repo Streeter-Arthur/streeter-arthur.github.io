@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Assignment portal page for Arthur Streeter, a student in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="styles/large-7.css">
+    <link rel="stylesheet" href="styles/small-7.css">
+    <script type="text/javascript" src="./scripts/hamburger.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <title>Preston-7 Assignment</title>
+    
+  </head>
+  
+  <body>
+
+        <header>
+
+                <img class="logo" src="images/logo.png" alt="logo">
+        
+                <section>
+        
+                    <h1>PeekOutside</h1>
+        
+                    <p>What's it like out there?</p>
+        
+                </section>
+        
+                <img class="currentWeather" src="images/partly-cloudy.png" alt="current-weather">
+        
+        </header>
+            
+            <nav>
+                <ul>
+                    <li class="menu">
+                    <button onclick="showMenu()" class="navMenu" >&#9776;</button>
+                    <h4 href="#" > Menu</h4>
+                    </li>
+                    <li>
+                    <a href="./preston-7.html">Home</a>
+                    </li>
+                    <li>
+                    <a href="#">Preston</a>
+                    </li>
+                    <li>
+                    <a href="#">Soda Springs</a>
+                    </li>
+                    <li>
+                    <a href="#">Fish Haven</a>
+                    </li>
+                    <li>
+                    <a href="#">Storm Center</a>
+                    </li>
+                    <li>
+                    <a href="#" class="active">Gallery</a>
+                    </li>
+                </ul>
+            </nav>
+        <main>
+
+            <h2>Gallery</h2>
+            <section class=gallery>
+                <p class="img1"><img src="images/image01.jpg">Perfect sunny weather to talk a dog for a walk!</p>
+                <p class="img2"><img src="images/image02.jpg">High chance of rain, be sure to wear some boots!</p>
+                <p class="img3"><img src="images/image03.jpg">Incoming sunny weather to melt all that snow!</p>
+                <p class="img4"><img src="images/image04.jpg">The sunset this evening will be around 7:26pm.</p>
+                <p class="img5"><img src="images/image05.jpg">Foggy weather this morning, be careful out there!</p>
+                <p class="img6"><img src="images/image06.jpg">Sunrise will be at approximately 5:48am.</p>
+            </section>
+
+        </main>
+    
+        <footer>
+    
+            <section class="bottom">
+                <img src="images/antique-black-classic-747114.jpg" alt="contact" class="contactImg">
+                <div class="contact">
+                    <p><span>PeekOutside</span><br>123 Home Dr<br> DisneyWorld, Florida 12345<br><br>999.999.9999<br>Contact@PeekOutside.com</p>
+                </div>
+                <div class="map">
+
+                        <iframe  id="gmap_canvas" src="https://maps.google.com/maps?q=disney%20world&t=&z=13&ie=UTF8&iwloc=&output=embed"  ></iframe>
+
+                </div>
+    
+            </section>
+    
+            <section class="footernav">
+                <p>&copy;2018 PeekOutside | Attributions | Arthur Streeter<br><span id="currentDate"></span></p>
+            </section>
+    
+        </footer>
+    
+        <script type="text/javascript" src="./scripts/currentdate.js"></script>
+
+    </body>
+
+</html>
