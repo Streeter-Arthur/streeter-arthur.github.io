@@ -1,40 +1,40 @@
 {
-    "squadName" : "Super hero squad",
-    "homeTown" : "Metro City",
-    "formed" : 2016,
-    "secretBase" : "Super tower",
+    "squadName" : "The Streeter Squad",
+    "homeTown" : "Arlington",
+    "formed" : 2018,
+    "secretBase" : "Streeter Estate",
     "active" : true,
     "members" : [
       {
-        "name" : "Molecule Man",
-        "age" : 29,
-        "secretIdentity" : "Dan Jukes",
+        "name" : "Turo Man",
+        "age" : 28,
+        "secretIdentity" : "Gregory Thompson",
         "powers" : [
-          "Radiation resistance",
-          "Turning tiny",
-          "Radiation blast"
+          "Radiation sludge",
+          "Turning gigante",
+          "Radiation poof"
         ]
       },
       {
-        "name" : "Madame Uppercut",
-        "age" : 39,
-        "secretIdentity" : "Jane Wilson",
+        "name" : "Freezone",
+        "age" : 9,
+        "secretIdentity" : "Roger Wilco",
         "powers" : [
-          "Million tonne punch",
-          "Damage resistance",
-          "Superhuman reflexes"
+          "Frozen Blast",
+          "Ice Pew Pew",
+          "Slide City"
         ]
       },
       {
-        "name" : "Eternal Flame",
-        "age" : 1000000,
-        "secretIdentity" : "Unknown",
+        "name" : "Firey Boi",
+        "age" : 1,
+        "secretIdentity" : "Baby Bilbo",
         "powers" : [
-          "Immortality",
-          "Heat Immunity",
-          "Inferno",
-          "Teleportation",
-          "Interdimensional travel"
+          "Old Man Breath",
+          "Barf Attacks",
+          "Spontaneous Explosions",
+          "Walking",
+          "Intimidating Stare"
         ]
       }
     ]
