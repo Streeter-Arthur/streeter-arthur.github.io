@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Assignment portal page for Arthur Streeter, a student in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script type="text/javascript" src="./scripts/hamburger.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <title>Preston</title>
+    
+  </head>
+  
+  <body>
+
+        <header>
+
+                <img class="logo" src="images/logo.png" alt="logo">
+        
+                <section>
+        
+                    <h1>PeekOutside</h1>
+        
+                    <p>What's it like out there?</p>
+        
+                </section>
+        
+                <img class="currentWeather" src="images/partly-cloudy.png" alt="current-weather">
+        
+        </header>
+            
+            <nav>
+                <ul>
+                    <li class="menu">
+                    <button onclick="showMenu()" class="navMenu" >&#9776;</button>
+                    <h4 href="#" > Menu</h4>
+                    </li>
+                    <li>
+                    <a href="#" >Home</a>
+                    </li>
+                    <li>
+                    <a href="#" class="active">Preston</a>
+                    </li>
+                    <li>
+                    <a href="#">Soda Springs</a>
+                    </li>
+                    <li>
+                    <a href="#">Fish Haven</a>
+                    </li>
+                    <li>
+                    <a href="./stormcenter.html">Storm Center</a>
+                    </li>
+                    <li>
+                    <a href="./gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </nav>
+      <main>
+
+            <h2>The Town of Preston</h2>
+    
+            <div class="today">
+                <section class="weathersummary">
+                    <h3>Weather Summary</h3>
+                    <div class="weatherdetails">
+                        <p class="label">Currently:</p>
+                        <p class="value">Cloudy</p>
+                        <p class="label">Temperature:</p>
+                        <p class="value"><span id="temp">76</span> &deg;F</p>
+                        <p class="label">Humidity:</p>
+                        <p class="value">69%</p>
+                        <p class="label">Precipitation:</p>
+                        <p class="value">0 inches</p>
+                        <p class="label">Wind Speed:</p>
+                        <p class="value"><span id="windSpeed">5</span> mph</p>
+                        <p class="label">Wind Chill:</p>
+                        <p class="value"><span id="windChill"></span> &deg;F</p>
+                    </div>
+                </section>
+            </div>
+    
+            <section class="forecast">
+                <h3>High Temperature Forecast</h3>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                        <th>Sun</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th>Forecast</th>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+    
+            <article>
+                <h3>George Foreman Caught Grilling Again!</h3>
+                <span>by Gregory Thompson</span>
+                <p>It's always a hoot to have an awesome cook-out on a fall day. We've been having
+                    State-Wide contests on who can grill up the best Slab-O-Meat for the past seventeen
+                    years and we've yet to have seen anyone worth mentioning swing by until now! The Famous,
+                    The Amazing, The Miracoulous, GEORGE FOREMAN has finally came all the way to our nick of
+                    the woods to grill us up a masterpiece on his (patented) George Foreman Grill! Of course,
+                    we're not sponsored or anything - by golly would we like to be! Regardless, it's always a
+                    wonder to see what this godsend can make! No one would have guessed that he would have started
+                    out with his one-and-only George Foreman Grilling Sauce and George Foreman Grilling Utensils
+                    to set up his Slab-O-Meat for the Great Grillout. And absolutely NO ONE would have ... <a href="#">continue to full article</a>
+                </p>
+                <img src="images/adults-aerial-barbecue-1260310.jpg" alt="grilling" class="articleImage">
+            </article>
+        
+        
+        </main>
+    
+        <footer>
+    
+            <section class="bottom">
+                <img src="images/antique-black-classic-747114.jpg" alt="contact" class="contactImg">
+                <div class="contact">
+                    <p><span>PeekOutside</span><br>123 Home Dr<br> DisneyWorld, Florida 12345<br><br>999.999.9999<br>Contact@PeekOutside.com</p>
+                </div>
+                <div class="map">
+
+                        <iframe  id="gmap_canvas" src="https://maps.google.com/maps?q=disney%20world&t=&z=13&ie=UTF8&iwloc=&output=embed"  ></iframe>
+
+                </div>
+    
+            </section>
+    
+            <section class="footernav">
+                <p>&copy;2018 PeekOutside | Attributions | Arthur Streeter<br><span id="currentDate"></span></p>
+            </section>
+    
+        </footer>
+    
+        <script type="text/javascript" src="./scripts/currentdate.js"></script>
+        <script type="text/javascript" src="./scripts/windchill.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Assignment portal page for Arthur Streeter, a student in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script type="text/javascript" src="./scripts/hamburger.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <title>Storm Center</title>
+    
+  </head>
+  
+  <body>
+
+        <header>
+
+                <img class="logo" src="images/logo.png" alt="logo">
+        
+                <section>
+        
+                    <h1>PeekOutside</h1>
+        
+                    <p>What's it like out there?</p>
+        
+                </section>
+        
+                <img class="currentWeather" src="images/partly-cloudy.png" alt="current-weather">
+        
+        </header>
+            
+            <nav>
+                <ul>
+                    <li class="menu">
+                    <button onclick="showMenu()" class="navMenu" >&#9776;</button>
+                    <h4 href="#" > Menu</h4>
+                    </li>
+                    <li>
+                    <a href="#" >Home</a>
+                    </li>
+                    <li>
+                    <a href="./preston.html" >Preston</a>
+                    </li>
+                    <li>
+                    <a href="#">Soda Springs</a>
+                    </li>
+                    <li>
+                    <a href="#">Fish Haven</a>
+                    </li>
+                    <li>
+                    <a href="#" class="active">Storm Center</a>
+                    </li>
+                    <li>
+                    <a href="./gallery.html">Gallery</a>
+                    </li>
+                </ul>
+            </nav>
+        <main>
+
+            <h2>Storm Center</h2>
+    
+            <form id="stormForm" action="./thanks.html">
+                <label>Full Name: </label>
+                <input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required>
+                
+                <label>Email: </label>
+                <input type="email" name="email" placeholder="sample@email.com">
+                
+                <label>Phone Number: </label>
+                <input type="tel" name="phone number" required>
+                
+                <label>Zip Code: </label>
+                <input type="number" name="zip code" required>
+                
+                <label>Storm Date: </label>
+                <input type="date" name="storm date">
+                
+                <label>Storm Type: </label>
+                <input list="stormtype">
+                    <datalist id="stormtype">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                    </datalist>
+                    
+                <label for="severity">Severity</label>
+                <input type="range" min="1" max="10" list="tickmarks">
+                    <datalist id="tickmarks">
+                        <option value="1" label="1" >
+                        <option value="2">
+                        <option value="3">
+                        <option value="4">
+                        <option value="5" label="5">
+                        <option value="6">
+                        <option value="7">
+                        <option value="8">
+                        <option value="9">
+                        <option value="10" label="10">
+                    </datalist>
+                <select id="stormRegion">
+                        <option value="default" selected="true" disabled>Select a region...</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda">Soda Springs</option>
+                        <option value="fish">Fish Haven</option>
+                </select>
+                <p>Are you in any danger?:</p>
+                <div class="radioSelection">
+                    <input type="radio" id="danger1" name="user in-danger level" value="yes">
+                    <label for="danger1">Yes</label>
+
+                    <input type="radio" id="danger2" name="user in-danger level" value="maybe">
+                    <label for="danger2">Maybe</label>
+
+                    <input type="radio" id="danger3" name="user in-danger level" value="no" checked>
+                    <label for="danger3" >No</label>
+                </div>
+                <textarea rows="4" cols="30" name="additional information or comments" id="comments"placeholder="Please enter any additional information or comments."></textarea>
+                <input type="submit" name="form submission button" id="submit" value="Send Report">
+            </form>
+
+
+
+        </main>
+    
+        <footer>
+    
+            <section class="bottom">
+                <img src="images/antique-black-classic-747114.jpg" alt="contact" class="contactImg">
+                <div class="contact">
+                    <p><span>PeekOutside</span><br>123 Home Dr<br> DisneyWorld, Florida 12345<br><br>999.999.9999<br>Contact@PeekOutside.com</p>
+                </div>
+                <div class="map">
+
+                        <iframe  id="gmap_canvas" src="https://maps.google.com/maps?q=disney%20world&t=&z=13&ie=UTF8&iwloc=&output=embed"  ></iframe>
+
+                </div>
+    
+            </section>
+    
+            <section class="footernav">
+                <p>&copy;2018 PeekOutside | Attributions | Arthur Streeter<br><span id="currentDate"></span></p>
+            </section>
+    
+        </footer>
+
+        <script type="text/javascript" src="./scripts/currentdate.js"></script>
+
+
+    </body>
+
+</html>
