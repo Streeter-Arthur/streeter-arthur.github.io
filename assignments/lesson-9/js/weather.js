@@ -25,7 +25,7 @@ function getWeather(jsonObj){
     var day5Temp = parseInt(forecast[36].main.temp_max);
     
     var iconID = forecast[0].weather[0].icon;
-    var weatherIcon = 'http://openweathermap.org/img/w/'+(iconID)+'.png';
+    var weatherIcon = 'https://openweathermap.org/img/w/'+(iconID)+'.png';
 
 
     document.getElementById('condition').innerHTML = condition;
