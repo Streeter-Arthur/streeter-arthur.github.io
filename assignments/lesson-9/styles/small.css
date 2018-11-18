@@ -46,7 +46,6 @@ header div{
     padding: 0em 1em;
     text-transform: capitalize;
     color: #3c74a6;
-    box-shadow: ;
     box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.58), 0px 10px 10px -9px rgba(0,0,0,0.58);
     font-weight: bold;
 }
