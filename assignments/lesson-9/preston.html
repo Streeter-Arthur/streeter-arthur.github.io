@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <script type="text/javascript" src="./scripts/hamburger.js"></script>
+    <script type="text/javascript" src="./js/hamburger.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <title>Preston</title>
     
@@ -28,9 +28,10 @@
                     <p>What's it like out there?</p>
         
                 </section>
-        
-                <img class="currentWeather" src="images/partly-cloudy.png" alt="current-weather">
-        
+                <div>
+                <div class="weatherConditions"><img class="currentWeatherIcon" id="currentWeather" alt="current-weather"><span id="weatherDescription"></span></div>
+                </div>
+
         </header>
             
             <nav>
@@ -40,7 +41,7 @@
                     <h4 href="#" > Menu</h4>
                     </li>
                     <li>
-                    <a href="#" >Home</a>
+                    <a href="./index.html" >Home</a>
                     </li>
                     <li>
                     <a href="#" class="active">Preston</a>
@@ -68,15 +69,13 @@
                     <h3>Weather Summary</h3>
                     <div class="weatherdetails">
                         <p class="label">Currently:</p>
-                        <p class="value">Cloudy</p>
+                        <p class="value"><span id="condition"></span></p>
                         <p class="label">Temperature:</p>
-                        <p class="value"><span id="temp">76</span> &deg;F</p>
+                        <p class="value"><span id="temp"></span> &deg;F</p>
                         <p class="label">Humidity:</p>
-                        <p class="value">69%</p>
-                        <p class="label">Precipitation:</p>
-                        <p class="value">0 inches</p>
+                        <p class="value"><span id="humidity"></span>%</p>
                         <p class="label">Wind Speed:</p>
-                        <p class="value"><span id="windSpeed">5</span> mph</p>
+                        <p class="value"><span id="windSpeed"></span> mph</p>
                         <p class="label">Wind Chill:</p>
                         <p class="value"><span id="windChill"></span> &deg;F</p>
                     </div>
@@ -99,11 +98,11 @@
                     <tbody>
                     <tr>
                         <th>Forecast</th>
-                        <td>89&deg;F</td>
-                        <td>87&deg;F</td>
-                        <td>78&deg;F</td>
-                        <td>75&deg;F</td>
-                        <td>72&deg;F</td>
+                        <td><span id="day1"></span>&deg;F</td>
+                        <td><span id="day2"></span>&deg;F</td>
+                        <td><span id="day3"></span>&deg;F</td>
+                        <td><span id="day4"></span>&deg;F</td>
+                        <td><span id="day5"></span>&deg;F</td>
                     </tr>
                     </tbody>
                 </table>
@@ -149,8 +148,9 @@
     
         </footer>
     
-        <script type="text/javascript" src="./scripts/currentdate.js"></script>
-        <script type="text/javascript" src="./scripts/windchill.js"></script>
+        <script type="text/javascript" src="./js/currentdate.js"></script>
+        <script type="text/javascript" src="./js/weather.js"></script>
+        <script type="text/javascript" src="./js/windchill.js"></script>
 
     </body>
 

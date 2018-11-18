@@ -45,5 +45,12 @@
     input[type="submit"]{
         grid-column: 2;
     }
-   
+    section.townsDisplay{
+        grid-template-columns: auto auto auto;
+    }
+   .townsDisplay article:hover{
+    background-color: rgba(60, 116, 166, 0.726);
+    color: white;
+    cursor: pointer;
+   }
 }

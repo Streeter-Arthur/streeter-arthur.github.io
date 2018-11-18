@@ -41,4 +41,8 @@
     input[type="submit"]{
         grid-column: 2;
     }
+    
+    section.townsDisplay{
+        grid-template-columns: auto auto auto;
+    }
 }

@@ -28,6 +28,33 @@ h1{
     margin: 0;
     text-shadow: 2px 2px 1px white;
 }
+
+header div{
+    display: grid;
+    align-items: center;
+    margin-left: .3em;
+}
+.weatherConditions{
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    border-radius: 2em;
+    border: white solid;
+    background: rgb(235, 225, 163);
+    min-width: 7em;
+    height: 6em; 
+    padding: 0em 1em;
+    text-transform: capitalize;
+    color: #3c74a6;
+    box-shadow: ;
+    box-shadow: inset 0px 0px 11px -3px rgba(0,0,0,0.58), 0px 10px 10px -9px rgba(0,0,0,0.58);
+    font-weight: bold;
+}
+img.currentWeatherIcon{
+    width: 60px;
+    padding: 0;
+}
+
 /*     End of Header     */
 
 /*     Start of Nav Menu     */
@@ -45,6 +72,7 @@ li a {
     color: white;
     border-right: 1px solid #bbb;
     text-align: center;
+    text-decoration: none;
 }
 
 li a:hover {
@@ -118,6 +146,8 @@ p.value{
     float: right;
     width: 5em;
     color: rgb(185, 239, 241);
+    text-transform: capitalize;
+    text-overflow: ellipsis;
 }
 /*     End of Today Div  */
 
@@ -146,6 +176,10 @@ section.forecast tr *{
     padding: .5em;
     border-style: solid;
     border-color: white;
+}
+.forecast span{
+    padding: 0;
+    border: 0;
 }
 /*     End of 5-Day Forcast Div  */
 /*     Start of Article Div  */
@@ -261,9 +295,51 @@ label{
   }
 /* End of Storm Center Page */
 
+/* Start of Index Page */
+
+section.townsDisplay{
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto;
+    justify-content: space-around;
+}
+.townsDisplay article{
+    display: grid;
+    padding: 0;
+    width: 13em;
+    border-radius: 0 0 .5em .5em;
+    box-shadow: 2px 3px 20px -2px rgba(0,0,0,0.58);
+}
+.townsDisplay p{
+    width: auto;
+}
+.townsDisplay p:first-of-type{
+    font-style: italic;
+    height: 3em;
+}
+.townsDisplay img{
+    width: 13em;
+    box-shadow: none;
+    border-radius: 0 0 .5em .5em;
+}
+.townsDisplay span{
+    all: unset;
+    font-weight: bold;
+}
+.townsDisplay h3{
+    font-size: 2em;
+    text-shadow: 1px 1px 1px rgb(34, 34, 34);
+}
+.townsDisplay a{
+    position: absolute;
+    width: 18.6em;
+    height: 37.2em;
+}
+/* End of Index Page */
+
 @media only screen and (max-width: 779px) {
     body{width: 432px;}
-    header img {display: none; }
+    header img, header div {display: none; }
     header h1 {font-size: 3em;}
     header section{padding: 20px 20px 0px 30px;}
 
