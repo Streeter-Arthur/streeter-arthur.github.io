@@ -1,0 +1,41 @@
+{
+    "squadName" : "The Streeter Squad",
+    "homeTown" : "Arlington",
+    "formed" : 2018,
+    "secretBase" : "Streeter Estate",
+    "active" : true,
+    "members" : [
+      {
+        "name" : "Turo Man",
+        "age" : 28,
+        "secretIdentity" : "Gregory Thompson",
+        "powers" : [
+          "Radiation sludge",
+          "Turning gigante",
+          "Radiation poof"
+        ]
+      },
+      {
+        "name" : "Freezone",
+        "age" : 9,
+        "secretIdentity" : "Roger Wilco",
+        "powers" : [
+          "Frozen Blast",
+          "Ice Pew Pew",
+          "Slide City"
+        ]
+      },
+      {
+        "name" : "Firey Boi",
+        "age" : 1,
+        "secretIdentity" : "Baby Bilbo",
+        "powers" : [
+          "Old Man Breath",
+          "Barf Attacks",
+          "Spontaneous Explosions",
+          "Walking",
+          "Intimidating Stare"
+        ]
+      }
+    ]
+  }
