@@ -40,7 +40,7 @@
             townArticle.id = title.textContent.charAt(0).toLowerCase()+ title.textContent.replace(/\s+/, "").slice(1);
             img.alt = townArticle.id;
 
-            link.href = townArticle.id + '.html';
+            link.href = townArticle.id.toLowerCase() + '.html';
 
             townArticle.appendChild(title);
             townArticle.appendChild(p1);
