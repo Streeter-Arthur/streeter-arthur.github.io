@@ -101,6 +101,7 @@ div.schedules span{
     text-shadow: 0px 1px 4px rgba(0,0,0,1);
 }
 ul.schedule{ display: none;}
+
 article.temple div *{
     margin: 0;
 }
@@ -156,6 +157,9 @@ article.temple div.schedules button.showSchedule{
     font-size: 1.2em;
     text-shadow: 0px 1px 4px rgba(0,0,0,1);
 }
+article.temple div button.showSchedule:hover{
+    cursor: pointer;
+}
 /* Body end */
 
 /* Reservation Form Start */
@@ -175,7 +179,7 @@ label{
     text-align: left;
 }
 :required {
-    border-color: rgb(247, 90, 90);
+    border-color: rgb(241, 49, 49);
   }
 
 p.confirmation{
