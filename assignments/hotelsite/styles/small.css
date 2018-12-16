@@ -1,0 +1,303 @@
+body{
+    background-color: #e7d7c1;
+    font-family: 'Josefin Sans', sans-serif;
+    max-width: 950px;
+    margin: auto;
+    color: white;
+}
+
+header{
+    background-color: #bf4342;
+    color: rgb(255, 253, 240);
+    margin: 0;
+    display: flex;
+    justify-content: left;
+}
+.logo{
+    padding: .3em;
+    max-height: 80px;
+}
+h1{
+    padding: 0em 0em;
+    font-size: 3em;
+    margin: 0.4em 0 .2em 0;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #735751;
+    justify-content: center;
+    margin: 0;
+}
+
+nav li a:hover {
+    background-color: #a78a7f;
+    color: white;
+}
+nav li a.active {
+    background-color: #e7d7c1;
+    font-weight: bold;
+    color: #bf4342;
+    border-style: none;
+
+}
+nav li.menu {display:none;}
+
+nav li, nav li a{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 7em;
+    line-height: 3em;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+nav li{
+    border-right: 1px #e7d7c1 solid;
+}
+nav li:last-child{
+    border: none;
+}
+
+/* Body start*/
+main a{
+    color: rgb(127, 199, 247);
+    text-decoration-line: none;
+}
+main a:hover{
+    color: rgb(6, 85, 138);
+    background-color: white;
+    border-radius: 5px;
+    padding: 3px 3px 3px 0px;
+    box-shadow: 0px 1px 6px -3px rgba(0,0,0,1);
+}
+
+article{
+    display: grid;
+    grid-auto-columns: auto auto;
+    grid-auto-rows: auto auto;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    margin: 1em auto;
+    max-width: 900px;
+    padding: 1em 0em;
+    grid-template-areas:
+    'main main'
+    'session session';
+}
+article.alternate:nth-child(odd) div.schedules{
+    grid-area: session;
+}
+article.alternate:nth-child(even) div.schedules{
+    grid-area: session;
+}
+div.schedules span{
+    font-weight: bold;
+    text-shadow: 0px 1px 4px rgba(0,0,0,1);
+}
+ul.schedule{ display: none;}
+article.temple div *{
+    margin: 0;
+}
+article.alternate div {
+    padding: 1em 1em;
+}
+article img{
+    margin: auto 1em;
+    border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -webkit-box-shadow: 0px 9px 30px -8px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 9px 30px -8px rgba(0,0,0,1);
+    box-shadow: 0px 9px 30px -8px rgba(0,0,0,1);
+
+}
+article:nth-child(even){
+    background-color: #735751;
+    
+}
+article:nth-child(odd){
+    background-color: #9f7a6c;
+}
+article.alternate div.reserveInvite *{
+    margin: auto 0 1em 0;
+}
+article.alternate a.reserveRoom{
+    color: rgb(6, 85, 138);
+    display: grid;
+    background-color: white;
+    border-radius: 15px;
+    font-size: 1.5em;
+    padding: .6em;
+    box-shadow: 0px 9px 15px -8px rgba(0,0,0,1);
+    text-align: center;
+    margin: 1em auto;
+    width: 8em;
+}
+.reserveRoom:hover{
+    border-radius: 15px;
+    padding: .6em;
+    box-shadow: 0px 9px 15px -8px rgba(0,0,0,1);
+}
+article.alternate a.reserveRoom:active{
+    margin: 1.1em auto;
+    box-shadow: 0px 5px 15px -8px rgba(0,0,0,1);
+}
+/* Body end */
+
+/* Reservation Form Start */
+
+main{
+    display: block;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    margin-bottom: 2em;
+}
+label{
+    width: 10em;
+    text-align: left;
+}
+:required {
+    border-color: rgb(247, 90, 90);
+  }
+
+p.confirmation{
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 0px 2px 4px rgba(0,0,0,1);
+
+}
+.confirmation span{
+    font-weight: bold;
+}
+form{
+    color: #f4f4f4;
+    font-weight: bold;
+    margin:  1em auto;
+    border-radius: 15px;
+    padding: 2em 1em;
+    text-shadow: 0px 1px 4px rgba(0,0,0,1);
+    background-image: linear-gradient(147deg, #9f7a6c 38%, #735751 100%);
+}
+
+.container h2{
+    text-align: center;
+    color: #735751;
+}
+/* Reservation Form End */
+
+
+footer{
+    background-color: #bf4342;
+    display: grid;
+    grid-auto-columns: auto auto;
+    grid-auto-rows: auto auto;
+}
+footer *{
+    display: grid;
+    justify-content: center;
+}
+.footermain{
+    grid-row: 1;
+    grid-column-gap: 5em;
+}
+.contact{
+    grid-column: 1;
+}
+.footermain iframe {
+    grid-column: 2;
+    margin: auto;
+}
+
+.footerbot{
+    grid-row: 2;
+    background-color: #735751;
+
+}
+.footerbot a{
+    grid-column: 2;
+    color: white;
+    text-decoration: none;
+    padding-left: .2em;
+}
+
+article.contactMap iframe{
+    width: 90%;
+    margin: 1em auto;
+    height: 400px;
+}
+@media only screen and (max-width: 761px) {
+    body{
+        width: 450px;
+    }
+    nav ul li{
+        display: none;
+        flex-basis: 2em;
+    }
+    nav li, nav li a {
+        line-height: 2.2em;
+        border: none;
+    }
+    nav button{
+        all: unset;
+        position: absolute;
+        padding:0em 15.6em 0em 11.6em;
+
+    }
+    nav ul{
+        flex-direction: column;
+        padding: 0;
+        border: solid #735751;
+        border-width: 0 .5em 0 .5em;
+    }
+    nav li a.active {
+        line-height: 3em;
+        border: none;
+    }
+
+    nav ul li.menu{
+        display: flex;
+    }
+
+    /* Temples Page CSS Start*/
+
+    article.alternate { 
+        grid-auto-columns: auto;
+        grid-auto-rows: auto auto auto;
+        
+    grid-template-areas:
+    'main'
+    'picture'
+    'session';
+        margin: 1em auto;
+        padding-bottom: 1em;
+    }
+
+    article.alternate div , .alternate img, .alternate picture{
+        justify-self: center;
+        margin: auto;
+    }
+
+
+
+    /* Temples Page CSS End*/
+
+    /* footer */
+    
+    .footermain{
+        grid-column-gap: 1em;
+    }
+    .footermain iframe {
+        width: 200px;
+        height: 120px;
+        margin: auto 0;
+    }
+}

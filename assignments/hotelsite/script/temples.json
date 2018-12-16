@@ -1,0 +1,67 @@
+
+{
+    "temples": [
+        {
+            "name": "Houston Texas Temple",
+            "templeClosureSchedule": [
+                "Tuesday, January 1, 2019",
+                "Monday, February 25, 2019 - Monday, March 11, 2019",
+                "Saturday, April 6, 2019",
+                "Thursday, July 4, 2019",
+                "Tuesday, August 6, 2019 - Monday, September 2, 2019",
+                "Saturday, October 5, 2019",
+                "Wednesday, November 27, 2019 (Limited Hours)",
+                "Thursday, November 28, 2019",
+                "Tuesday, December 24, 2019 - Wednesday, December 25, 2019",
+                "Tuesday, December 31, 2019 (Limited Hours)"
+            ],
+            "city": "Spring",
+            "image": ""
+        },
+        {
+            "name": "Dallas Texas Temple",
+            "templeClosureSchedule": [
+                "Tuesday, December 25, 2018",
+                "Tuesday, January 1, 2019",
+                "Saturday, April 6, 2019",
+                "Monday, April 22, 2019 - Monday, May 6, 2019",
+                "Thursday, July 4, 2019",
+                "Tuesday, October 1, 2019 - Monday, November 11, 2019",
+                "Wednesday, November 27, 2019 (Limited Hours)",
+                "Thursday, November 28, 2019",
+                "Tuesday, December 24, 2019 - Wednesday, December 25, 2019",
+                "Tuesday, December 31, 2019"
+            ],
+            "city": "Dallas"
+        },
+        {
+            "name": "San Salvador El Salvador Temple",
+            "templeClosureSchedule": [
+                "Tuesday, December 25, 2018",
+                "Tuesday, January 1, 2019",
+                "Tuesday, March 5, 2019 - Monday, March 25, 2019",
+                "Saturday, April 6, 2019",
+                "Monday, September 2, 2019 - Monday, September 16, 2019",
+                "Saturday, October 5, 2019",
+                "Tuesday, December 24, 2019 - Wednesday, December 25, 2019",
+                "Tuesday, December 31, 2019"
+            ],
+            "city": "San Salvador"
+        },
+        {
+            "name": "Monticello Utah Temple",
+            "templeClosureSchedule": [
+                "Tuesday, December 25, 2018",
+                "Tuesday, January 1, 2019",
+                "Tuesday, January 15, 2019 - Monday, January 28, 2019",
+                "Saturday, April 6, 2019",
+                "Tuesday, July 2, 2019 - Monday, July 15, 2019",
+                "Saturday, July 27, 2019",
+                "Saturday, October 5, 2019",
+                "Wednesday, November 27, 2019 - Thursday, November 28, 2019",
+                "Tuesday, December 24, 2019 - Wednesday, December 25, 2019"
+            ],
+            "city": "Monticello"
+        }
+    ]
+}

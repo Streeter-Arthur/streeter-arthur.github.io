@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Find a Hotel near your the Temple of your Destination.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.0.min.js"></script>
+    <script type="text/javascript" src="./script/menucollapse.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <title>Reservation Form | Temple-Inn.com</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <img class="logo" src="images/logo.png" alt="logo">
+
+        <section>
+
+            <h1>Temple-Inn</h1>
+
+        </section>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li class="menu" id="menu">
+                <button class="navMenu">&#9776;</button>
+                <a href="#"> Menu</a>
+            </li>
+            <li>
+                <a href="./index.html">Home</a>
+            </li>
+            <li>
+                <a href="./temples.html">Temples</a>
+            </li>
+            <li>
+                <a href="#" class="active">Reservation</a>
+            </li>
+            <li>
+                <a href="./services.html">Services</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="container">
+                <h2>Reservation Request</h2>
+                <form id="reservationForm" action="./confirmation.html">
+                    <label>Full Name: </label>
+                    <input type="text" name="fullname" pattern="[A-Za-z ]{5,}" required>
+                    
+                    <label>Email: </label>
+                    <input type="email" name="email" placeholder="sample@email.com">
+                    
+                    <label>Phone Number: </label>
+                    <input type="tel" name="phone number" required>
+                    
+                    <label>Location: </label>
+                    <input type="address" name="address" required>
+                    
+                    <label>Date Start: </label>
+                    <input type="date" name="reservation date start">
+
+                    <label>Date End: </label>
+                    <input type="date" name="reservation date end">
+                        
+                    
+                    <select id="typeOfRooms">
+                            <option value="default" selected="true" disabled>Select a desired reservation type...</option>
+                            <option value="economy">Economy</option>
+                            <option value="couple">Couple Suite</option>
+                            <option value="family">Family Room</option>
+                            <option value="largeFamily">Large Family(4+)</option>
+                    </select>
+                    
+                    <textarea rows="4" cols="40" name="additional information or comments" id="comments" placeholder="Please let us know of any special accomodations or comments you may have."></textarea>
+                    <input type="submit" name="form submission button" id="submit" value="Send Request">
+                </form>
+        </div>
+    </main>
+
+    <footer>
+
+        <section class="footermain">
+            <div class="contact">
+                <p><span>Temple-Inn</span><br>4800 Montgomery Ln #300<br> Bethesda, MD 20814<br><br>999.999.9999<br>Contact@Temple-Inn.com</p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.4050197013257!2d-77.09772048410305!3d38.98325177955748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0x9c8eb1c5547b83eb!2s4800+Montgomery+Ln+%23300%2C+Bethesda%2C+MD+20814!5e0!3m2!1sen!2sus!4v1544859027221"></iframe>
+        </section>
+
+        <section class="footerbot">
+            <p>&copy;2018 Temple-Inn | <a href="./resources.html">Resources</p>
+        </section>
+
+
+    </footer>
+
+</body>
+
+</html>
