@@ -94,6 +94,7 @@ article.alternate:nth-child(odd) div.schedules{
 }
 article.alternate:nth-child(even) div.schedules{
     grid-area: session;
+    justify-self: center;
 }
 div.schedules span{
     font-weight: bold;
@@ -146,6 +147,14 @@ article.alternate a.reserveRoom{
 article.alternate a.reserveRoom:active{
     margin: 1.1em auto;
     box-shadow: 0px 5px 15px -8px rgba(0,0,0,1);
+}
+
+article.temple div.schedules button.showSchedule{
+    all: unset;
+    font-weight: bolder;
+    padding: 1em;
+    font-size: 1.2em;
+    text-shadow: 0px 1px 4px rgba(0,0,0,1);
 }
 /* Body end */
 

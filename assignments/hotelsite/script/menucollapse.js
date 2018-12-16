@@ -13,6 +13,6 @@ $(document).ready(function() {
     });
 $(document).ready(function() {
 	$("button.showSchedule").click(function() {
-		$("ul.schedule").slideToggle("1000");
+		$(this).siblings("ul.schedule").slideToggle("1000");
 	});
-     });
+});
