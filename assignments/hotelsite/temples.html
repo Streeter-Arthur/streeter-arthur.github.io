@@ -57,7 +57,7 @@
         <main>
 
             <article class="temple alternate">
-                <div>
+                <div class="details">
                     <h2>Houston Texas Temple</h2>
                     <h3>Address</h3>
                     <p>15725 Champion Forest Dr<br>
@@ -88,14 +88,23 @@
                     <p><span>Initiatory Sessions:</span> For intiatory information and schedule, please call the temple.</p>
                     <p><span>Endowment Sessions:</span> Every hour starting at 8:00AM with the last session at 8:00PM</p>
                     <p><span>Sealing Sessions:</span> For sealing information and schedule, please call the temple.</p>
+                    
+                    <section class="weathersummary">
+                        <div class="weatherdetails">
+                            <p class="detail">Current Weather: <span id="conditionH"></span></p>
+                            <p class="detail">Temperature: <span id="tempH"></span> &deg;F</p>
+                        </div>
+                    </section>
+                    
                     <button class="showSchedule">Click for Temple Closure Schedule</button>
+                    
                     <ul class="schedule" id="houston">
                     </ul>
                 </div>
            </article>
 
             <article class="temple alternate">
-                <div>
+                <div class="details">
                     <h2>San Salvador El Salvador Temple</h2>
                     <h3>Address</h3>
                     <p>Avenida El Espino y Calle El Pedregal<br>
@@ -125,6 +134,14 @@
                     <p><span>Initiatory Sessions:</span> For intiatory information and schedule, please call the temple.</p>
                     <p><span>Endowment Sessions:</span> 7:00AM // 8:30AM // 10:00AM // 11:30AM</p>
                     <p><span>Sealing Sessions:</span> For sealing information and schedule, please call the temple.</p>
+                    
+                    <section class="weathersummary">
+                        <div class="weatherdetails">
+                            <p class="detail">Current Weather: <span id="conditionS"></span></p>
+                            <p class="detail">Temperature: <span id="tempS"></span> &deg;F</p>
+                        </div>
+                    </section>
+                    
                     <button class="showSchedule">Click for Temple Closure Schedule</button>
                     <ul class="schedule" id="sansalvador">
                     </ul>
@@ -133,7 +150,7 @@
             </article>
 
             <article class="temple alternate">
-                <div>
+                <div class="details">
                     <h2>Dallas Texas Temple</h2>
                     <h3>Address</h3>
                     <p>6363 Willow Ln<br>
@@ -164,6 +181,14 @@
                     <p><span>Initiatory Sessions:</span> For intiatory information and schedule, please call the temple.</p>
                     <p><span>Endowment Sessions:</span> Every Hour starting at 7:00AM until the last session at 10:00AM.</p>
                     <p><span>Sealing Sessions:</span> For sealing information and schedule, please call the temple.</p>
+                    
+                    <section class="weathersummary">
+                        <div class="weatherdetails">
+                            <p class="detail">Current Weather: <span id="conditionD"></span></p>
+                            <p class="detail">Temperature: <span id="tempD"></span> &deg;F</p>
+                        </div>
+                    </section>
+                    
                     <button class="showSchedule">Click for Temple Closure Schedule</button>
                     <ul class="schedule" id="dallas">
                     </ul>
@@ -172,7 +197,7 @@
             </article>
 
             <article class="temple alternate">
-                <div>
+                <div class="details">
                     <h2>Monticello Utah Temple</h2>
                     <h3>Address</h3>
                     <p>365 N 200 W<br>
@@ -203,6 +228,14 @@
                     <p><span>Initiatory Sessions:</span> For intiatory information and schedule, please call the temple.</p>
                     <p><span>Endowment Sessions:</span> 10:00AM // 12:15PM // 5:00PM // 7:15PM</p>
                     <p><span>Sealing Sessions:</span> For sealing information and schedule, please call the temple.</p>
+                    
+                    <section class="weathersummary">
+                        <div class="weatherdetails">
+                            <p class="detail">Current Weather: <span id="conditionM"></span></p>
+                            <p class="detail">Temperature: <span id="tempM"></span> &deg;F</p>
+                        </div>
+                    </section>
+                    
                     <button class="showSchedule">Click for Temple Closure Schedule</button>
                     <ul class="schedule" id="monticello">
                     </ul>
@@ -227,6 +260,7 @@
         
             </footer>
             <script type="text/javascript" src="./script/templeclosures.js"></script>
+            <script type="text/javascript" src="./script/weathersummary.js"></script>
 
     </body>
 

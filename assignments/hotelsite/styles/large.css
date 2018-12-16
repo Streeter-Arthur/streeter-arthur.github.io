@@ -63,4 +63,8 @@
     input[type="submit"]{
         grid-column: 2;
     }
+    section.weathersummary div.weatherdetails{
+        display: grid;
+        grid-row: 2;
+    }
 }

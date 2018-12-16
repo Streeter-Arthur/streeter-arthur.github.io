@@ -66,4 +66,11 @@
         article.contactMap {
             max-width: 700px;
         }
+        section.weathersummary h3 {
+            grid-row: 1;
+        }
+        section.weathersummary div.weatherdetails{
+            display: grid;
+            grid-row: 2;
+        }
 }
