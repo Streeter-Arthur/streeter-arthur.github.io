@@ -24,6 +24,9 @@
         article.amenities:nth-child(odd) div{
             justify-self: start;
         }
+        article.alternate div.confirmationDiv{
+            grid-column: span 2;
+        }
         form{
             color: #f4f4f4;
             font-weight: bold;
